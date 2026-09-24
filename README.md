@@ -45,7 +45,7 @@ The system also allows users to compare foods, add items to a cart, manage quant
 ```text
 ## Project Structure
 
-```text
+
 SmartBite/
 │
 ├── main.py
