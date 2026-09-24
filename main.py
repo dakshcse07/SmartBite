@@ -25,12 +25,7 @@ def get_quantity():
 
 
 def get_food_from_result(item):
-    """
-    recommender.py returns:
-    (score, food)
-
-    This function extracts the food dictionary.
-    """
+    
 
     if isinstance(item, tuple):
         return item[1]
@@ -166,9 +161,7 @@ def recommendation_flow():
         "Enter maximum budget (₹): "
     )
 
-    # =========================
-    # BRAND
-    # =========================
+   
 
     print("\n========== BRAND ==========")
 
@@ -205,9 +198,7 @@ def recommendation_flow():
             print("Invalid brand.")
             return
 
-    # =========================
-    # CATEGORY
-    # =========================
+    
 
     print("\n========== CATEGORY ==========")
 
@@ -244,9 +235,7 @@ def recommendation_flow():
             print("Invalid category.")
             return
 
-    # =========================
-    # FILTER
-    # =========================
+    
 
     results = filter_foods(
         FOODS,
@@ -257,9 +246,7 @@ def recommendation_flow():
         category
     )
 
-    # =====================================================
-    # EXACT MATCHES
-    # =====================================================
+    
 
     if results:
 
@@ -278,8 +265,7 @@ def recommendation_flow():
             start=1
         ):
 
-            # IMPORTANT:
-            # rank_foods returns (score, food)
+            
             score = item[0]
             food = item[1]
 
@@ -338,10 +324,7 @@ def recommendation_flow():
 
                 print("Invalid option.")
 
-    # =====================================================
-    # NO EXACT MATCHES
-    # =====================================================
-
+   
     else:
 
         print("\nNo exact matches found.")
@@ -367,8 +350,7 @@ def recommendation_flow():
             start=1
         ):
 
-            # find_closest_foods also returns:
-            # (difference, food)
+            
 
             food = item[1]
 
