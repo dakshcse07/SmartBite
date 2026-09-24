@@ -1,7 +1,7 @@
 def calculate_score(food, max_calories, min_protein, max_budget, mode):
     score = 0
 
-    # Basic requirement points
+    
     if food["calories"] <= max_calories:
         score += 20
 
@@ -11,12 +11,12 @@ def calculate_score(food, max_calories, min_protein, max_budget, mode):
     if food["price"] <= max_budget:
         score += 20
 
-    # Calorie score
+    
     if food["calories"] <= max_calories:
         calorie_ratio = food["calories"] / max_calories
         score += int((1 - calorie_ratio) * 15)
 
-    # Protein score
+    
     if food["protein"] >= min_protein:
         protein_ratio = food["protein"] / min_protein
 
@@ -25,25 +25,25 @@ def calculate_score(food, max_calories, min_protein, max_budget, mode):
         else:
             score += int((protein_ratio - 1) * 15)
 
-    # Budget score
+    
     if food["price"] <= max_budget:
         budget_ratio = food["price"] / max_budget
         score += int((1 - budget_ratio) * 10)
 
-    # Mode-specific bonus
-    if mode == "1":  # Cheat Meal
+   
+    if mode == "1":  
         if food["calories"] <= max_calories:
             score += 5
 
-    elif mode == "2":  # High Protein
+    elif mode == "2":  
         if food["protein"] >= min_protein:
             score += 10
 
-    elif mode == "3":  # Low Calorie
+    elif mode == "3":  
         if food["calories"] <= max_calories:
             score += 10
 
-    elif mode == "4":  # Best Value
+    elif mode == "4":  
         if food["price"] <= max_budget:
             score += 10
 
