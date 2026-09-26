@@ -9,13 +9,7 @@ def compare_foods(foods):
     print("\nAvailable foods:")
 
     for number, food in enumerate(foods, start=1):
-        print(
-            number,
-            ".",
-            food["name"],
-            "-",
-            food["brand"]
-        )
+        print(number,".",food["name"],"-",food["brand"])
 
     try:
         first = int(input("\nEnter first food number: "))
@@ -48,25 +42,13 @@ def compare_foods(foods):
         print(food1["category"], "vs", food2["category"])
 
         print("\nCalories:")
-        print(
-            food1["calories"],
-            "vs",
-            food2["calories"]
-        )
+        print(food1["calories"],"vs",food2["calories"])
 
         print("\nProtein:")
-        print(
-            food1["protein"],
-            "g vs",
-            food2["protein"],
-            "g"
-        )
+        print(food1["protein"],"g vs",food2["protein"],"g")
 
         print("\nPrice:")
-        print(
-            "₹", food1["price"],
-            "vs ₹", food2["price"]
-        )
+        print("₹", food1["price"],"vs ₹", food2["price"])
 
         print("\n================================")
 
