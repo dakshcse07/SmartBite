@@ -8,11 +8,7 @@ def filter_foods(foods, max_calories, min_protein, max_budget,
 
     for food in foods:
 
-        if (
-            food["calories"] <= max_calories
-            and food["protein"] >= min_protein
-            and food["price"] <= max_budget
-        ):
+        if (food["calories"] <= max_calories and food["protein"] >= min_protein and food["price"] <= max_budget):
 
             food_brand = food["brand"].strip().lower()
             food_category = food["category"].strip().lower()
