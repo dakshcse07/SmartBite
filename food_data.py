@@ -1,6 +1,6 @@
 FOODS = [
 
-    # McDonald's
+    # McDonald's Different food items for smartbte
     {
         "name": "McAloo Tikki",
         "brand": "McDonald's",
@@ -28,7 +28,7 @@ FOODS = [
         "price": 129
     },
 
-    # KFC
+    # KFC different food items for smartbite
     {
         "name": "2 pc Hot & Crispy Chicken",
         "brand": "KFC",
@@ -56,7 +56,7 @@ FOODS = [
         "price": 249
     },
 
-    # Domino's
+    # Domino's different food items for smartbite
     {
         "name": "Margherita",
         "brand": "Domino's",
@@ -84,7 +84,7 @@ FOODS = [
         "price": 139
     },
 
-    # Subway
+    # Subway different food items for smartbite
     {
         "name": "Veggie Delite",
         "brand": "Subway",
