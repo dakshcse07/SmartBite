@@ -50,17 +50,7 @@ def show_order_list(cart):
 
         total_amount += item_total
 
-        print(
-            number,
-            ".",
-            food["name"],
-            "|",
-            food["brand"],
-            "| Qty:",
-            quantity,
-            "| ₹",
-            item_total
-        )
+        print(number,".",food["name"],"|",food["brand"],"| Qty:",quantity,"| ₹",item_total)
 
     print("-------------------------------")
     print("Total Amount: ₹", total_amount)
@@ -82,17 +72,7 @@ def add_multiple_foods(food_list):
 
             food = get_food_from_result(item)
 
-            print(
-                number,
-                ".",
-                food["name"],
-                "|",
-                food["brand"],
-                "|",
-                food["category"],
-                "| ₹",
-                food["price"]
-            )
+            print(number,".",food["name"],"|",food["brand"],"|",food["category"],"| ₹",food["price"])
 
         print("0. Finish adding")
 
@@ -260,21 +240,7 @@ def recommendation_flow():
             score = item[0]
             food = item[1]
 
-            print(
-                number,
-                ".",
-                food["name"],
-                "|",
-                food["brand"],
-                "|",
-                food["calories"],
-                "calories |",
-                food["protein"],
-                "g protein | ₹",
-                food["price"],
-                "| Score:",
-                score
-            )
+            print(number,".",food["name"],"|",food["brand"],"|",food["calories"],"calories |",food["protein"],"g protein | ₹",food["price"],"| Score:",score)
 
         while True:
 
@@ -345,19 +311,7 @@ def recommendation_flow():
 
             food = item[1]
 
-            print(
-                number,
-                ".",
-                food["name"],
-                "|",
-                food["brand"],
-                "|",
-                food["calories"],
-                "calories |",
-                food["protein"],
-                "g protein | ₹",
-                food["price"]
-            )
+            print(number,".",food["name"],"|",food["brand"],"|",food["calories"],"calories |",food["protein"],"g protein | ₹",food["price"])
 
         while True:
 
