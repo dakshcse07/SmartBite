@@ -1,6 +1,6 @@
 FOODS = [
 
-    # McDonald's Different food items for smartbte
+    # McDonald's Different food items for smartbite 
     {
         "name": "McAloo Tikki",
         "brand": "McDonald's",
