@@ -55,7 +55,7 @@ def show_order_list(cart):
     print("-------------------------------")
     print("Total Amount: ₹", total_amount)
 
-    print("\nThank you for adding items to your cart!")
+    print("\nThank you for adding items to your cart!!")
 
 
 def add_multiple_foods(food_list):
