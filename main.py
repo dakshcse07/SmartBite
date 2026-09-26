@@ -25,8 +25,6 @@ def get_quantity():
 
 
 def get_food_from_result(item):
-    
-
     if isinstance(item, tuple):
         return item[1]
 
@@ -117,11 +115,7 @@ def add_multiple_foods(food_list):
 
             quantity = get_quantity()
 
-            add_to_cart(
-                cart,
-                selected_food,
-                quantity
-            )
+            add_to_cart(cart,selected_food,quantity)
 
         except ValueError:
 
@@ -160,9 +154,6 @@ def recommendation_flow():
     max_budget = get_positive_number(
         "Enter maximum budget (₹): "
     )
-
-   
-
     print("\n========== BRAND ==========")
 
     brands = sorted(
@@ -508,8 +499,6 @@ def start_program():
             user = login_user()
 
             if user:
-
-
                 main_menu()
 
                 break

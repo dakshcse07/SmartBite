@@ -9,17 +9,9 @@ def add_to_cart(cart, food, quantity):
             )
             return
 
-    cart.append({
-        "food": food,
-        "quantity": quantity
-    })
+    cart.append({"food": food,"quantity": quantity})
 
-    print(
-        food["name"],
-        "x",
-        quantity,
-        "added to cart."
-    )
+    print(food["name"],"x",quantity, "added to cart.")
 
 
 def remove_from_cart(cart, item_number, quantity):
@@ -31,12 +23,7 @@ def remove_from_cart(cart, item_number, quantity):
     food = item["food"]
 
     if quantity > item["quantity"]:
-        print(
-            "You only have",
-            item["quantity"],
-            food["name"],
-            "in your cart."
-        )
+        print("You only have", item["quantity"], food["name"], "in your cart.")
         return
 
     item["quantity"] -= quantity
@@ -46,17 +33,8 @@ def remove_from_cart(cart, item_number, quantity):
         print(food["name"], "removed from cart.")
 
     else:
-        print(
-            quantity,
-            food["name"],
-            "removed."
-        )
-        print(
-            "Remaining:",
-            food["name"],
-            "| Qty:",
-            item["quantity"]
-        )
+        print(quantity, food["name"], "removed.")
+        print("Remaining:",food["name"],"| Qty:",item["quantity"])
 
 
 def view_cart(cart):
@@ -79,15 +57,7 @@ def view_cart(cart):
         item_calories = food["calories"] * quantity
         item_protein = food["protein"] * quantity
 
-        print(
-            number,
-            ".",
-            food["name"],
-            "| Qty:",
-            quantity,
-            "| ₹",
-            item_price
-        )
+        print(number,".",food["name"],"| Qty:", quantity,"| ₹",item_price)
 
         total_price += item_price
         total_calories += item_calories
@@ -119,13 +89,7 @@ def checkout(cart):
         item_calories = food["calories"] * quantity
         item_protein = food["protein"] * quantity
 
-        print(
-            food["name"],
-            "| Qty:",
-            quantity,
-            "| ₹",
-            item_price
-        )
+        print(food["name"],"| Qty:",quantity,"| ₹",item_price)
 
         total_price += item_price
         total_calories += item_calories
