@@ -2,11 +2,7 @@ def add_to_cart(cart, food, quantity):
     for item in cart:
         if item["food"]["name"].lower() == food["name"].lower():
             item["quantity"] += quantity
-            print(
-                food["name"],
-                "quantity updated to",
-                item["quantity"]
-            )
+            print(food["name"],"quantity updated to",item["quantity"])
             return
 
     cart.append({"food": food,"quantity": quantity})
