@@ -2,7 +2,7 @@
 
 ## Problem Statement
 
-Students and other users often have different preferences when choosing fast-food items, such as calorie limits, protein requirements, budget, brand, and food category. Comparing available options manually can be inconvenient.
+Students and other users often have different preferences when choosing fast-food items, such as calorie limits, protein requirements, budget, brand, and food category. Comparing available food options manually can be very inconvenient.
 
 SmartBite provides a simple command-line system that helps users find suitable fast-food options based on these requirements and also supports comparison, cart management, and simulated checkout.
 
