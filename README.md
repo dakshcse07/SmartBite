@@ -178,4 +178,4 @@ Possible future improvements include:
 
 ## Disclaimer
 
-SmartBite is an academic project created for demonstration and educational purposes. The nutritional and price information used in the application is illustrative and may not represent current or exact real-world values.
+SmartBite is an academic project created for demonstration and educational purposes. The nutritional and price information used in the application is illustrative and may not represent current or exact real-world values .
