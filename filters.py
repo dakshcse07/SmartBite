@@ -1,5 +1,4 @@
-def filter_foods(foods, max_calories, min_protein, max_budget,
-                 brand="All", category="All"):
+def filter_foods(foods, max_calories, min_protein, max_budget,brand="All", category="All"):
 
     results = []
 
