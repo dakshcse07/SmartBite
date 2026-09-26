@@ -64,10 +64,7 @@ def rank_foods(foods, max_calories, min_protein, max_budget, mode):
 
         ranked_foods.append((score, food))
 
-    ranked_foods.sort(
-        reverse=True,
-        key=lambda item: item[0]
-    )
+    ranked_foods.sort(reverse=True,key=lambda item: item[0])
 
     return ranked_foods
 
