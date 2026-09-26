@@ -1,7 +1,7 @@
 def compare_foods(foods):
 
     if len(foods) < 2:
-        print("Not enough foods available for comparison.")
+        print("Not enough foods are available for comparison.")
         return
 
     print("\n========== FOOD COMPARISON ==========")
